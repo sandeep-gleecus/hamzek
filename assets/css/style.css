@@ -495,6 +495,10 @@ a:focus {
     color:#a0e1dd;
     font-size: 14px;
     transform: rotate(45deg);
+    cursor: pointer;
+}
+.product-arc span:hover{
+    color:#46c6bd;
 }
 .dot-text-active{
     color: #46c6bd !important;
@@ -567,6 +571,27 @@ a:focus {
 #home_logo_white{
     margin-top: 10px;
 }
+.partner-header{
+    color: #46c6bd;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.partner-img{
+    padding-left: 0px !important;
+}
+.partner-img img{
+    width: 100%;
+}
+.partner-img div{
+    width: 270px;
+}
+.partner-desc{
+    padding-right: 0px;
+}
+.partner-desc p{
+    margin:57px 0px;
+    color: #cdd6d7;
+}
 /*media queries*/
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -621,7 +646,9 @@ a:focus {
 }
 
 @media (min-width:320px) and (max-width:767px){
-
+    .partner-desc p{
+        margin:0px 0px;
+    }
 }
 
 @media (min-width:768px) and (max-width:1023px){
