@@ -2,7 +2,11 @@ $(window).bind('scroll', function() {
     // var navHeight = $( window ).height() - 70;
     if ($(window).scrollTop()) {
         $('.nav-fix').addClass('fixed');
+        $("#home_logo_white").css("display", "block");
+        $("#home_logo_hash").css("display", "none");
     } else {
+        $("#home_logo_white").css("display", "none");
+        $("#home_logo_hash").css("display", "block");
         $('.nav-fix').removeClass('fixed');
     }
 });
@@ -70,9 +74,27 @@ $(document).ready(function() {
     //     console.log("class toggle,", this)
     // });
 
-    $('.product-arc span').on('click', function(){
+    $('.product-arc span').on('click', function(e){
+        console.log($(this).hasClass("dot-two"))
         $('.product-arc span.dot-text-active').removeClass('dot-text-active');
         $(this).addClass('dot-text-active');
+        if ($(this).hasClass("dot-two")) {
+            $("#truaglo_product").css("display", "block");
+        }else{
+            $("#truaglo_product").css("display", "none");
+        }
+
+        if ($(this).hasClass("dot-one")) {
+            $("#trutalks_product").css("display", "block")
+        }else{
+            $("#trutalks_product").css("display", "none")
+        }
+
+        if ($(this).hasClass("dot-three")) {
+            $("#stuzee_procuct").css("display", "block");            
+        }else{
+            $("#stuzee_procuct").css("display", "none");
+        }
     });
 
     $('input[name="emails"]').keyup(function() {

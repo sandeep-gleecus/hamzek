@@ -26,7 +26,8 @@
                 <button type="button" class="navbar-toggle" onclick="openNav()">
                     <img src="assets/images/nav-menu.png">
                 </button>
-                <a class="navbar-brand hamzek-brand" href="#page"><img src="assets/images/Hamzek_logo.png"></a>
+                <a class="navbar-brand hamzek-brand" id="home_logo_hash" href="#page"><img src="assets/images/Hamzek_logo.png"></a>
+                <a class="navbar-brand hamzek-brand" id="home_logo_white" style="display: none;" href="#page"><img src="assets/images/Hamzeklogo_white.png"></a>
                 <a class="navbar-brand hamzek-mb-brand" href="#page"><img src="assets/images/hamzek_logo_icon.png"></a>
             </div>
             <div class="collapse navbar-collapse" id="smooth-scroll">
@@ -132,7 +133,19 @@
         <!-- desktop view -->
         <div class="container" id="desktop-products">
             <div class="sub-header-background">Our Products<h3 class="sub-header">OUR PRODUCTS</h3></div>            
-            <div class="col-lg-12 col-md-12">
+            <div class="col-lg-6 col-md-6" style="text-align:center;">
+                <div class="product-arc">
+                    <div class="product-circle">
+                        <img src="assets/images/hamzek_logo_icon.png"/>
+                        <p>Products</p>
+                    </div>
+                    <span class="dot-two dot-text-active"><span class="dot"></span>TruAglo</span>
+                    <span class="dot-one"><span class="dot"></span>TruTalks</span>
+                    <span class="dot-three"><span class="dot"></span>Stuzee</span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6" id="truaglo_product">
                 <div class="product-main-image"><img src="assets/images/truaglo.png" style="margin-bottom:15px;"/></div>
                 <div class="product-main-content">
                     <h4 class="product-sub-header">TruAglo</h4>
@@ -144,7 +157,7 @@
                     <a class="hanzek-green-btn" href="https://www.stumagz.com" target="_blank">View Site</a>
                 </div>
             </div>
-            <div class="col-lg-12 col-md-12" style="margin-top: 30px;">
+            <div class="col-lg-6 col-md-6" id="trutalks_product" style="margin-top: 30px;display: none;">
                 <div class="product-main-image"><img src="assets/images/trutalks.png" style="margin-bottom:15px;" /></div>
                 <div class="product-main-content">
                     <h4 class="product-sub-header">TruTalks</h4>
@@ -158,8 +171,8 @@
                     <a class="hanzek-green-btn" href="#" target="_blank">Launching Soon</a>
                 </div>
             </div>
-            <div class="col-lg-12 col-md-12" style="margin-top: 30px;">
-                <div class="product-main-image"><img src="assets/images/stuzee.png" style="margin-bottom:15px;" /></div>
+            <div class="col-lg-6 col-md-6" id="stuzee_procuct" style="margin-top: 30px;display: none;">
+                <div class="product-main-image"><img src="assets/images/stuzee_logo.png" style="margin-bottom:15px;" /></div>
                 <div class="product-main-content">
                     <h4 class="product-sub-header">Stuzee</h4>
                     <p style="color: #8b9b9e;font-size: 16px;margin-bottom: 25px;">
@@ -217,7 +230,7 @@
                           </div>
                           <div class="item">
                             <div class="row">
-                                <div class="col-sm-4 product-main-image"><img src="assets/images/stuzee.png" style="margin-bottom:15px;"/></div>
+                                <div class="col-sm-4 product-main-image"><img src="assets/images/stuzee_logo.png" style="margin-bottom:15px;"/></div>
                                 <div class="col-sm-8 product-main-content">
                                     <h4 class="product-sub-header">Stuzee</h4>
                                     <p style="color: #8b9b9e;font-size: 16px;margin-bottom: 25px;">
@@ -249,9 +262,9 @@
     <section id="team" class="section-margin">
         <div class="container">
             <div class="sub-header-background">Our Team<h3 class="sub-header">OUR TEAM</h3></div>
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-bottom: 40px;;">
               <!-- Indicators -->
-              <ol class="carousel-indicators" id="mobile-indicators">
+              <ol class="carousel-indicators" id="mobile-indicators" style="display: block;">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>                
               </ol>
@@ -259,9 +272,15 @@
               <div class="carousel-inner">
                 <div class="item active">
                     <div class="row">
-                        <div class="col-lg-2 col-md-2"></div>
-                        <!-- <div class="col-md-4 col-lg-4 col-sm-6 team-image"><img class="img-responsive" src="assets/images/team1.png"/></div> -->
+                        <div class="col-md-4 col-lg-4 col-sm-6 team-image">
+                            <img class="img-responsive" src="assets/images/jaiwanth.png"/>
+                        </div>
                         <div class="col-md-8 col-lg-8 col-sm-10 team-container">
+                                <div class="team-social-links">
+                                        <a href="https://www.linkedin.com/in/jaiwanth-mane-456691169/" target="_blank">
+                                            <img src="assets/images/linkedin.png"/>
+                                        </a>
+                                    </div>
                             <p>Jaiwanth Mane</p>
                             <p>CEO and Co-Founder</p>
                             <p>
@@ -272,20 +291,20 @@
                                 Sensing that there’s a legitimate and desperate need for new practices in the educational 
                                 ecosystem, he co-founded Hamzek Solutions with his long-time friend Anurag Palla.
                             </p>
-                            <ul>
-                                <li><a href="#"><img src="assets/images/facebook.png"/></a></li>
-                                <li><a href="#"><img src="assets/images/linkedin.png"/></a></li>
-                                <li><a href="#"><img src="assets/images/twitter.png"/></a></li>
-                            </ul>
                         </div>
-                        <div class="col-md-2 col-lg-2"></div>
                     </div>
                 </div>                
                 <div class="item">
                     <div class="row">
-                        <div class="col-lg-2 col-md-2"></div>
-                        <!-- <div class="col-md-4 col-lg-4 col-sm-6 team-image"><img class="img-responsive" src="assets/images/team1.png"/></div> -->
+                        <div class="col-md-4 col-lg-4 col-sm-6 team-image">
+                            <img class="img-responsive" src="assets/images/anurag.png"/>
+                        </div>
                         <div class="col-md-8 col-lg-8 col-sm-10 team-container">
+                                <div class="team-social-links">
+                                    <a href="http://www.linkedin.com/in/anurag-palla" target="_blank">
+                                        <img src="assets/images/linkedin.png"/>
+                                    </a>
+                                </div>
                             <p>Anurag Palla</p>
                             <p>Co-Founder</p>
                             <p>
@@ -297,18 +316,12 @@
                                 a difference, Anurag started his stint as an angel investor believing in his friend’s
                                 vision and thus co-founded Hamzek Solutions.
                             </p>
-                            <ul>
-                                <li><a href="#"><img src="assets/images/facebook.png"/></a></li>
-                                <li><a href="#"><img src="assets/images/linkedin.png"/></a></li>
-                                <li><a href="#"><img src="assets/images/twitter.png"/></a></li>
-                            </ul>
                         </div>
-                        <div class="col-lg-2 col-md-2"></div>
                     </div>
                 </div>
               </div>
               <!-- Left and right controls -->
-              <div id="desktop-indicators">
+              <div id="desktop-indicators" style="display: none;">
                     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                         <!-- <span class="glyphicon glyphicon-chevron-left"></span> -->
                         <img class="glyphicon glyphicon-chevron-left" src="assets/images/left_icon.png"/>
@@ -383,13 +396,13 @@
                 <li><a href="#contact">Privacy</a></li>
             </ul>
             <p style="color:#cdd6d7;">&copy; 2018 - 19 Hamzek Solutions Private Limited. All rights reserved.</p>
-            <ul class="social-links-list">
+            <!-- <ul class="social-links-list">
                 <span>Follow us at:</span>
                 <li><a href="#"><img src="assets/images/facebook_white.png" alt=""></a></li>
                 <li><a href="#"><img src="assets/images/linkedin_white.png" alt=""></a></li>
                 <li><a href="#"><img src="assets/images/twitter_white.png" alt=""></a></li>
                 <li><a href="#"><img src="assets/images/instagram_white.png" alt=""></a></li>
-            </ul>
+            </ul> -->
         </div>
     </section>
 </body>

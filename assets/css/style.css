@@ -389,7 +389,7 @@ a:focus {
     color:#060808;
     font-size:20px;
 }
-.team-container p:nth-child(3){
+.team-container p:nth-child(4){
     color:#cdd6d7;
     font-size:16px;
     margin-bottom: 30px;
@@ -479,12 +479,12 @@ a:focus {
 .dot-one{
     position: absolute;
     top: 419px;
-    right: 6px;
+    right: -12px;
 }
 .dot-two{
     position: absolute;
     top: 310px;
-    right: -70px;
+    right: -55px;
 }
 .dot-three{
     position: absolute;
@@ -508,6 +508,7 @@ a:focus {
     background: #46c6bd;
     border-radius: 50%;
     margin-right: 16px;
+    cursor: pointer;
 }
 .product-arc{
     border: 1px solid #3d9ecf;
@@ -536,6 +537,35 @@ a:focus {
 }
 .product-circle img{
     margin-top:35%;
+}
+.linkedin-place{
+    position: absolute;
+    top: 11px;
+    left: 228px;
+}
+.team-image{
+    padding-left: 0px;
+}
+.team-container{
+    padding-right: 0px;
+}
+.carousel-indicators li{
+    background: #999 !important;
+    margin-right: 6px !important;
+}
+.carousel-indicators .active{
+    background: #5dc8be !important;
+}
+.team-social-links{
+    position: absolute;
+    left: 170px;
+    top: 8px;
+}
+#home_logo_hash{
+    margin-top: 10px;
+}
+#home_logo_white{
+    margin-top: 10px;
 }
 /*media queries*/
 
